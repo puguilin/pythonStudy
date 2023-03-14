@@ -1,0 +1,3 @@
+2023-03-08 15:45:18-test_student.py[line:16]-INFO: 查询学生结果为 :    ID SNO         SNAME SSEX          createDate          updateDate remark
+0  117  11  测试map参数 新增前端    F 2023-01-03 10:45:28 2023-01-03 08:59:47  备注map
+2023-03-08 15:45:18-test_student.py[line:19]-INFO: 统计学生结果为:7 

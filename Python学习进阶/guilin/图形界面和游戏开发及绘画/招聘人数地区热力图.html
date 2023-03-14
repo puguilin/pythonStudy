@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Awesome-pyecharts</title>
+            <script type="text/javascript" src="https://assets.pyecharts.org/assets/v5/echarts.min.js"></script>
+        <script type="text/javascript" src="https://assets.pyecharts.org/assets/v5/maps/yun2_nan2_kun1_ming2.js"></script>
+
+</head>
+<body >
+    <div id="b3217f134fcc4c8ea70f740fbbabddb9" class="chart-container" style="width:900px; height:500px; "></div>
+    <script>
+        var chart_b3217f134fcc4c8ea70f740fbbabddb9 = echarts.init(
+            document.getElementById('b3217f134fcc4c8ea70f740fbbabddb9'), 'white', {renderer: 'canvas'});
+        var option_b3217f134fcc4c8ea70f740fbbabddb9 = {
+    "animation": true,
+    "animationThreshold": 2000,
+    "animationDuration": 1000,
+    "animationEasing": "cubicOut",
+    "animationDelay": 0,
+    "animationDurationUpdate": 300,
+    "animationEasingUpdate": "cubicOut",
+    "animationDelayUpdate": 0,
+    "aria": {
+        "enabled": false
+    },
+    "color": [
+        "#5470c6",
+        "#91cc75",
+        "#fac858",
+        "#ee6666",
+        "#73c0de",
+        "#3ba272",
+        "#fc8452",
+        "#9a60b4",
+        "#ea7ccc"
+    ],
+    "series": [
+        {
+            "type": "map",
+            "name": "\u6606\u660e",
+            "label": {
+                "show": true,
+                "margin": 8
+            },
+            "map": "\u6606\u660e",
+            "data": [
+                {
+                    "name": "\u4e1c\u5ddd\u533a",
+                    "value": 25600
+                },
+                {
+                    "name": "\u664b\u5b81\u533a",
+                    "value": 22721
+                },
+                {
+                    "name": "\u5b9c\u826f\u53bf",
+                    "value": 20916
+                },
+                {
+                    "name": "\u897f\u5c71\u533a",
+                    "value": 19521.13322632424
+                },
+                {
+                    "name": "\u76d8\u9f99\u533a",
+                    "value": 18398.762941176472
+                },
+                {
+                    "name": "\u4e94\u534e\u533a",
+                    "value": 17736.794297352342
+                },
+                {
+                    "name": "\u77f3\u6797\u5f5d\u65cf\u81ea\u6cbb\u53bf",
+                    "value": 16500.0
+                },
+                {
+                    "name": "\u5b98\u6e21\u533a",
+                    "value": 16089.533692722373
+                },
+                {
+                    "name": "\u5448\u8d21\u533a",
+                    "value": 14591.25462962963
+                },
+                {
+                    "name": "\u5b89\u5b81\u5e02",
+                    "value": 13967.380434782608
+                },
+                {
+                    "name": "\u5bfb\u7538\u53bf",
+                    "value": 11700.0
+                },
+                {
+                    "name": "\u7984\u529d\u53bf",
+                    "value": 11583.333333333334
+                },
+                {
+                    "name": "\u5bcc\u6c11\u53bf",
+                    "value": 10392.857142857143
+                },
+                {
+                    "name": "\u5d69\u660e\u53bf",
+                    "value": 7546.875
+                }
+            ],
+            "roam": true,
+            "aspectScale": 0.75,
+            "nameProperty": "name",
+            "selectedMode": false,
+            "zoom": 1,
+            "mapValueCalculation": "sum",
+            "showLegendSymbol": true,
+            "emphasis": {}
+        }
+    ],
+    "legend": [
+        {
+            "data": [
+                "\u6606\u660e"
+            ],
+            "selected": {
+                "\u6606\u660e": true
+            },
+            "show": true,
+            "padding": 5,
+            "itemGap": 10,
+            "itemWidth": 25,
+            "itemHeight": 14,
+            "backgroundColor": "transparent",
+            "borderColor": "#ccc",
+            "borderWidth": 1,
+            "borderRadius": 0,
+            "pageButtonItemGap": 5,
+            "pageButtonPosition": "end",
+            "pageFormatter": "{current}/{total}",
+            "pageIconColor": "#2f4554",
+            "pageIconInactiveColor": "#aaa",
+            "pageIconSize": 15,
+            "animationDurationUpdate": 800,
+            "selector": false,
+            "selectorPosition": "auto",
+            "selectorItemGap": 7,
+            "selectorButtonGap": 10
+        }
+    ],
+    "tooltip": {
+        "show": true,
+        "trigger": "item",
+        "triggerOn": "mousemove|click",
+        "axisPointer": {
+            "type": "line"
+        },
+        "showContent": true,
+        "alwaysShowContent": false,
+        "showDelay": 0,
+        "hideDelay": 100,
+        "enterable": false,
+        "confine": false,
+        "appendToBody": false,
+        "transitionDuration": 0.4,
+        "textStyle": {
+            "fontSize": 14
+        },
+        "borderWidth": 0,
+        "padding": 5,
+        "order": "seriesAsc"
+    },
+    "title": [
+        {
+            "show": true,
+            "text": "\u6606\u660e\u5730\u533a\u70ed\u529b\u56fe",
+            "target": "blank",
+            "subtarget": "blank",
+            "padding": 5,
+            "itemGap": 10,
+            "textAlign": "auto",
+            "textVerticalAlign": "auto",
+            "triggerEvent": false
+        }
+    ],
+    "visualMap": {
+        "show": true,
+        "type": "piecewise",
+        "min": 0,
+        "max": 30000,
+        "inRange": {
+            "color": [
+                "#50a3ba",
+                "#eac763",
+                "#d94e5d"
+            ]
+        },
+        "calculable": true,
+        "inverse": false,
+        "splitNumber": 10,
+        "hoverLink": true,
+        "orient": "vertical",
+        "padding": 5,
+        "showLabel": true,
+        "itemWidth": 20,
+        "itemHeight": 14,
+        "borderWidth": 0
+    }
+};
+        chart_b3217f134fcc4c8ea70f740fbbabddb9.setOption(option_b3217f134fcc4c8ea70f740fbbabddb9);
+    </script>
+</body>
+</html>
