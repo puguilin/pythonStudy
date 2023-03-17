@@ -11,6 +11,14 @@
 
 import pandas as pd
 
+a1 = [1,2,3]
+
+a1.append('4')
+b1 = a1
+print("a1 \n ", a1)
+print("b2 \n ", b1)
+
+
 a = pd.DataFrame({'A': ['A0', 'A1', 'A2', 'A3'],
                   'B': ['B0', 'B1', 'B2', 'B3'],
                   'C': ['C0', 'C1', 'C2', 'C3'],
