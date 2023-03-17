@@ -18,7 +18,6 @@ class Name1:
 class Name2():
     pass
 
-
 # 方式三
 class Name3(object):
     pass
