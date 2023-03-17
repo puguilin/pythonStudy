@@ -11,20 +11,6 @@
 
 import pandas as pd
 
-a1 = [1,2,3]
-
-a1.append('4')
-b1 = a1
-print("a1 \n ", a1)
-print("b2 \n ", b1)
-
-
-'''
-a1 
-  [1, 2, 3, '4']
-b2 
-  [1, 2, 3, '4']
-'''
 
 a = pd.DataFrame({'A': ['A0', 'A1', 'A2', 'A3'],
                   'B': ['B0', 'B1', 'B2', 'B3'],
@@ -38,7 +24,6 @@ b = pd.DataFrame({'A': ['A4', 'A5', 'A6', 'A7'],
                  index=[4, 5, 6, 7])
 # 沿着 axis=0，使用 apppend()方法连接a与b
 print("apppend()方法连接  该方法沿着 axis=0 （行方向）进行操作 \n", a.append(b))
-
 
 ''' 
 apppend()方法连接 
