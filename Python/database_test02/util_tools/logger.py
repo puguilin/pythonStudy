@@ -11,7 +11,7 @@ import time
 from logging.handlers import TimedRotatingFileHandler
 import threading
 import os
-from setconfig import get_config
+from config.setconfig import get_config
 
 
 

@@ -14,7 +14,7 @@ dbinfo = {}
 # 初始化数据库配置
 def _init_db():
     config = configparser.ConfigParser()
-    config.read('dbConfig.ini', encoding="utf-8-sig")  # 防止中文乱码
+    config.read('config/dbConfig.ini', encoding="utf-8-sig")  # 防止中文乱码
     dbinfo.update({"database": config['mysql']['database']})
     dbinfo.update({"host": config['mysql']['host']})
     dbinfo.update({"user": config['mysql']['user']})
