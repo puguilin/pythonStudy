@@ -23,7 +23,7 @@ class DataSourceSql:
 
     def _get_test_student(self):
         sqlStr = '''
-         select * from  student where  ID = 117
+         select * from  student /*where  ID = 117*/
         '''
         df = DbBase_test().db_pd_read(text(sqlStr))
         return df
