@@ -1,7 +1,8 @@
 from pymysql import *
 
+
 class Mysqlpython:
-    def __init__(self, database , host  , user  , password  , port):
+    def __init__(self, database, host, user, password, port):
         self.database = database
         self.host = host
         self.user = user
@@ -27,10 +28,11 @@ class Mysqlpython:
     def executesql(self, sql, L=[]):
         self.open()
 
-        self.cur.execute(sql, L)
+        res = self.cur.execute(sql, L)
         self.db.commit()
-
         self.close()
+        return res
+
     # 批量执行sql命令
     def executesqlmany(self, sql, L=[]):
         self.open()
@@ -39,8 +41,7 @@ class Mysqlpython:
         self.db.commit()
         self.close()
 
-
-    # 查询功能
+    # 查询所有学生功能
     def querysql_all(self, sql, L=[]):
         self.open()
         self.cur.execute(sql, L)
@@ -48,26 +49,32 @@ class Mysqlpython:
         result = self.cur.fetchall()
         return result
 
-    def query_all(self, sql, L=[]):
-        result = []
-        self.open()
-        for lx in L:
-            self.cur.execute(sql, lx)
-        # fecthall 返回的是多维元组
-            res = self.cur.fetchall()
-            result.append(res)
+    # 根据数组查询所有功能
+    def query_all_arr(self, sql, L=[]):
 
+        self.open()
+        # result = []
+        # for lx in L:
+        #     self.cur.execute(sql, lx)
+        #     res = self.cur.fetchall()
+        #     result.append(res)
+        # return result
+        self.cur.execute(sql, L)
+        result = self.cur.fetchall()
         return result
 
+    # 根据条件查询学生信息
     def querysql_one(self, sql, L=[]):
         self.open()
         self.cur.execute(sql, L)
         # fecthall 返回的是多维元组
         result = self.cur.fetchone()
         return result
+
+
 if __name__ == "__main__":
     sqlh = Mysqlpython()
-    arr =[]
+    arr = []
     ins = " select 1+1 from dua;"
-    r =sqlh.querysql(ins, [])
+    r = sqlh.querysql(ins, [])
     print(r[0])
