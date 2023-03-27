@@ -18,11 +18,11 @@
 # 1.直接使用print()函数输出
 
 untile = ("Python", 28, ("人生苦短", "我用Python"), ["爬虫", "云计算", "游戏"])
-print(untile)
+print("输出元组数据: " + str(untile))
 untile[1]  # 从0开始数, 1是第二个元素, 输出值是 28
-print(untile[1])
+print("通过索引来输出元组untile[1] 一次只能输出一个内容: " + str(untile[1]))
 untile[1:3]  # 1:3, 有1,2连个元素, 切片选取的时候是第2第3一共两个元素
-print(untile[1:3])
+print(" 切片选取元组中的元素 左闭右开 " + str(untile[1:3]))
 
 coffeename = ("蓝山", "卡布奇诺", "曼特宁", "麝香猫", "哥伦比亚")  # 定义一个字符元组
 print("您好, 欢迎光临~伊米卡米~\n\n我店有: \n")  # \n换行作用
@@ -40,7 +40,7 @@ team = ("火箭", "勇士", "开拓者", "雷霆", "爵士", "鹈鹕", "马刺",
 for index, item in enumerate(team):  # for关键字, 索引的变量index, 球队的名称item, in关键字, 函数名称enumerate(),参数是元组team
     # 因为要通过两行输出, 所以要进行索引判断, 看元素能否被2整除
     if index % 2 == 0:  # 如果能被2整除, 不换行输出
-        print(item + "\t\t\t\t", end=" ")  # 不换行输出
+        print(item + "\t\t", end=" ")  # 不换行输出
     else:
         print(item + "\n")  # 换行输出
 
