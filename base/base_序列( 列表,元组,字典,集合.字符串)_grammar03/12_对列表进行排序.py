@@ -10,10 +10,14 @@
 
 # 对列表进行排序
 # 在Python中有升序和降序两种排序方法
-# 1.使用列表对象的sort()方法   原列表的元素顺序改变.
-# 2.使用内置的sorted()函数    排序后原列表的元素顺序不变
+#  list.sort(cmp=None, key=None, reverse=False) 和  sorted(iterable, cmp=None, key=None, reverse=False) 理解
+# 1.1 使用列表对象的sort()方法   原列表的元素顺序改变.
+# 1.2 使用内置的sorted()函数    排序后原列表的元素顺序不变
 
-# 使用sort()方法实现排序后, 原列表的元素顺序改变.
+# 2. 通过key的值来进行数组/字典的排序
+# 注意： key -- 主要是用来进行比较的元素，只有一个参数，具体的函数的参数就是取自于可迭代对象中，指定可迭代对象中的一个元素来进行排序。
+
+# 使用sort()方法实现排序后,sort()的默认值就是升序  原列表的元素顺序改变.
 # listname(列表名称).sort(key=None, reverse=False)  reverse指定是升序还是降序排列, False代表升序排列, True是降序排列
 grade = [96, 99, 89, 79, 97, 63, 100, 94, 100]  # 保存成绩的列表
 print("原列表: ", grade)
@@ -38,3 +42,16 @@ print("sorted升序结果: ", char2_1)
 char2_2 = sorted(char2, reverse=True)  # reverse = True 则是降序
 print("sorted降序结果: ", char2_2)
 print("原列表内容: ", char2, "可见原列表结果没有改变")
+
+# 通过key的值来进行数组/字典的升序  key -- 主要是用来进行比较的元素，只有一个参数，具体的函数的参数就是取自于可迭代对象中，指定可迭代对象中的一个元素来进行排序。
+# 先按照成绩降序排序，相同成绩的按照名字升序排序：
+
+dict_data = [{'no': '30', 'name': 'alice', 'score': 38}, {'no': '05', 'name': 'bob', 'score': 18}, {'no': '26', 'name': 'darl', 'score': 28},
+             {'no': '28', 'name': 'christ', 'score': 28}]
+dict_sorted = sorted(dict_data, key=lambda x: (-x['score'], x['name']))
+print("列表 先按照成绩降序排序，相同成绩的按照名字升序排序 " + str(dict_sorted))
+
+# 列表按照年龄升序排列 x["age"]   降序 -x["age"]
+array = [{"age": 20, "name": "a"}, {"age": 25, "name": "b"}, {"age": 10, "name": "c"}]
+array_data = sorted(array, key=lambda x: -x["age"])
+print("通过key的值来进行数组/字典的升序 按照年龄升序排列 " + str(array_data))
