@@ -28,7 +28,7 @@ def set_value():
         sh[f'A{i}'] = 'Hello'
         sh[f'B{i}'] = '你好'
         sh[f'C{i}'] = '123456'
-        wb.save('res/test.xlsx')
+        wb.save('res/退单审核.xlsx')
 
 
 # 批量写入数据
@@ -67,7 +67,7 @@ def biaotou():
     two = [
         '店铺名称02',
         '评分02',
-        '评论02',快速查找重复数据.py
+        '评论02',
         '地址02',
         '人均价格02'
     ]
