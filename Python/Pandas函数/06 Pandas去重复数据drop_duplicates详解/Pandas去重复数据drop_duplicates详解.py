@@ -5,7 +5,7 @@
 #
 # @Time    : 2023/3/29 11:30
 # @Author  : pgl
-# @File    : Pandas去重复数据drop_duplicates详解.py
+# @File    : 06 Pandas去重复数据drop_duplicates详解.py
 # @IDE     : PyCharm
 
 
@@ -28,8 +28,9 @@ print(df)
 '''
     去重： df.drop_duplicates(subset=None, keep='first', inplace=False)
 subset： 列标签，可选  None  
-    subset=None 表示 两条记录完全一样时才会删除  
-    subset='名称'  选择标签时  只要当前列的标签下的值相同就会删除重复的记录
+    subset=None 表示考虑所有列值都相同时，将这所有列对应值相同的行进行去重 两条记录完全一样时才会删除  
+    subset=[‘B’]表示只考虑’B’这列，将B列对应值相同的行进行去重。例如subset='名称'  选择标签 名称 时,只要当前列的标签 名称 下的值相同就会删除重复的记录
+   
 keep： {‘first’, ‘last’, False}, 默认值 ‘first’
 first： 保留第一次出现的重复项。
 last： 删除重复项，仅保留最后一次出现的重复项。
