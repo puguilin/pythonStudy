@@ -21,3 +21,10 @@ df.columns = ['名称', '标识', '数值', '班级']
 df.index = ['rank1', 'rank2', 'rank3']
 print("\n 自定义标签 ")
 print(df)
+
+df = df.rename(
+    columns={'名称': '名称1', '标识': '标识1', '数值': '数值1', '班级': '班级1'},
+    index={'rank1': 'rank11', 'rank2': 'rank22', 'rank3': 'rank33'}
+    )
+print("\n 修改列名称和修改行索引名称 ")
+print(df)
