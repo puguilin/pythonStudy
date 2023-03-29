@@ -5,7 +5,7 @@
 #
 # @Time    : 2023/3/29 10:15
 # @Author  : pgl
-# @File    : drop函数（删除）的使用.py
+# @File    : drop函数（删除 行或者列）的使用.py
 # @IDE     : PyCharm
 
 
