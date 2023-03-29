@@ -56,7 +56,7 @@ insert1 = ['A', 'B', 'C', 'D']
 insert2 = ['h', 'e', 'l', 'l', 'o']
 
 # insert(),在list1的第2个元素前插入一个元素'X'
-list1.insert(1, 'X')
+insert1.insert(1, 'X')
 
 print("insert(1,”g”)），第一个参数是索引点，即插入的位置，第二个参数是插入的元素  \n", list1)
 
