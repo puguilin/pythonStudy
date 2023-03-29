@@ -41,4 +41,23 @@ inplace：布尔值，默认为False，是否删除重复项或返回副本
 df.drop_duplicates(subset='名称', keep='first', inplace=True)
 print("\n 删除重复的数据  保留第一次出现的记录 ")
 print(df)
+'''
+ 删除重复的数据  保留第一次出现的记录 
+          名称  标识    数值      班级
+rank1  green   M  10.1  class1
+rank2    red   L  13.5  class2
+rank3   blue  XL  15.3  class1
+rank4  black   S  12.3  class3
+'''
+df = df[['名称', '标识', '数值']]
+print("\n 过滤需要的列 ")
+print(df)
+
+'''
+          名称  标识    数值
+rank1  green   M  10.1
+rank2    red   L  13.5
+rank3   blue  XL  15.3
+rank4  black   S  12.3
+'''
 
