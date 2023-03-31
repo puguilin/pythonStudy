@@ -58,7 +58,7 @@ kw = dict(arrowprops=dict(arrowstyle="-"), zorder=0, va="center")
 # 遍历饼块绘制注释标签和引导线
 for i, p in enumerate(wedges):
     # 根据matplotlib.patches.Wedge对象的theta1和theta2参数计算饼块均分点的角度
-    ang = (p.theta2 - p.theta1) / 1.0 + p.theta1
+    ang = (p.theta2 - p.theta1) / 2.0 + p.theta1
     # 根据角度的弧度计算 饼块均分点的坐标（引导线的起点）
     y = np.sin(np.deg2rad(ang))
     x = np.cos(np.deg2rad(ang))
