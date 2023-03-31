@@ -94,7 +94,7 @@ def monitor(mail_conf: dict):
 def main():
     # 获取config.ini配置文件信息
     config = configparser.ConfigParser()
-    config.read('config生产.ini', encoding='utf-8')
+    config.read('config.ini', encoding='utf-8')
 
     # 获取发送邮件的相关配置信息
     mail_conf = dict(config.items('mail'))
