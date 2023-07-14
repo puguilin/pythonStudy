@@ -5,7 +5,7 @@ import os
 # 删除文件
 # os.remove("demo3")
 # 创建文件夹
-# os.mkdir("test")
+# os.mkdir("退单审核")
 # 获取当前目录的绝对路径
 # print(os.getcwd())
 # 改变目录
@@ -13,7 +13,7 @@ import os
 # print(os.getcwd())
 # 删除目录
 # # os.rmdir("目录路径")
-# os.rmdir('test')
+# os.rmdir('退单审核')
 # os.path.isabs("目录路径")
 # 判断文件是否为一个目录
 # os.path.isfile("文件路径")
